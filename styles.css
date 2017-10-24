@@ -1,19 +1,51 @@
+/* GENERAL STYLE */
 body {
     text-align: center;
+    font-family: "Lato", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    align-content: center;  
 }
 
-h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+
+/* HEADER STYLE */
+header {
+    background-color: lavender;
+}
+
+.header-text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 60px;
+    margin: 0.25em 0 0.1em;
+    padding: 0.3em 0;
+}
+
+
+/* MAIN SECTION STYLE */
+.main-section {
+    background-color: #e6e6e6;
+}
+
+.gridSize-text {
+    margin-top: 0;
+    padding-top: 1.5em;
 }
 
 h2 {
+    font-family: "Montserrat Alternates", sans-serif;
     margin: 1em 0 0.25em;
 }
 
 h2:first-of-type {
-    margin-top: 0.5em;
+    margin: 1.25em 0 0.75em;
+}
+
+input[type=number] {
+    width: 4em;
+}
+
+.colorPick-text {
+    margin-bottom: 0.5em;
 }
 
 table,
@@ -25,6 +57,7 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    background-color: white;
 }
 
 tr {
@@ -35,6 +68,38 @@ td {
     width: 20px;
 }
 
-input[type=number] {
-    width: 6em;
+.clearButton {
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* Special effects styles */
+td:hover {
+    border: 1.5px solid black;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.75);
+}
+
+.button:hover {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+/* FOOTER STYLE */
+footer {
+    background-color: #c1d3f0;
+    padding: 20px 0;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+[class*="fontawesome-"]:before {
+    font-family: "FontAwesome", sans-serif;
+    display: inline-block;
+}
+
+.icon-footer {
+    font-size: 1.5em;
+    color: #2d3c49;
+    text-shadow: 1.5px 1.5px 1.5px rgba(150, 150, 150, 1);
+    margin: 0 20px;
 }
